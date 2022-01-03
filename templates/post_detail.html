@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        <div class="post-entry">
+            <h2><a href="">{{ post.title }}</a></h2>
+            <h3>{{ post.author }}</h3>
+            <p>{{ post.body | slice:":2000" }}</p>
+        </div>
+{% endblock content %}
